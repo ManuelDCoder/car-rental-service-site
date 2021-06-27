@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="./assets/site-title-carousel/WEBpic.jpg" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -30,22 +31,22 @@
         <li><i class="fa fa-phone"></i> +233550746180/+233205391507</li>
         <li><i class="fa fa-envelope"></i> rentsmart.365@gmail.com</li>
         <div class="login">
-          <a href=""><i class="fas fa-user"></i> Login/Sign Up</a>
+          <a href="./pages/signup.html"><i class="fas fa-user"></i> Login/Sign Up</a>
         </div>
             <!-- Search - Bar -->
-            <form onsubmit="event.preventDefault();" role="search" aria-label="search" class="nav-search">
+        <form action="./pages/car-brands.html" onsubmit="event.preventDefault();" role="search" aria-label="search" class="nav-search" >
                 <input class="search"  type="search" placeholder="Search..." autofocus required />
                 <button class="search-btn" type="submit">Go</button>    
         </form>
       </div>
-
+      <!-- ------x------Address-----x----- - Bar  -->
 
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
 
     <nav class="nav">
-        <div class="nav-menu flex-row">
+        <div class="nav-menu  flex-row">
             <div class="nav-brand">
-                <a href="#" class="text-gray gradient-text">Rent Smart</a>
+                <a href="./Index.html" class="text-gray gradient-text">Rent Smart</a>
             </div>
             <div class="toggle-collapse">
                 <div class="toggle-icons">
@@ -55,19 +56,19 @@
             <div>
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="#">Home</a>
+                        <a href="./Index.html">Home</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Category</a>
+                        <a href="./pages/car-brands.html">Car Brands</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Archive</a>
+                        <a href="#test">Testimonial</a>
+                    </li>
+                    <li class="nav-link ">
+                        <a href="./pages/about.html">About Us</a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">Pages</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Contact Us</a>
+                        <a href="./pages/contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -141,30 +142,30 @@
                 <div class="progress-bar__fill"></div>
               </div>
               <header class="post__header">
-                <span class="post__tag">Our Deals</span>
-                <p class="post__published">16 August 2019</p>
+                <span class="post__tag">Promotions</span>
+                <p class="post__published">16th August 2021</p>
               </header>
-              <h2 class="post__title">New McLaren wind tunnel 'critical' to future performance, says Tech Director Key</h2>
+              <h2 class="post__title">50% Off to any location for 24Hrs</h2>
             </article>
             <article class="post">
               <div class="progress-bar">
                 <div class="progress-bar__fill"></div>
               </div>
               <header class="post__header">
-                <span class="post__tag">Video</span>
-                <p class="post__published">12 August 2019</p>
+                <span class="post__tag">Promotions</span>
+                <p class="post__published">25th May 2021</p>
               </header>
-              <h2 class="post__title">What To Watch For in the 2019 Hungarian Grand Prix</h2>
+              <h2 class="post__title">45% Off to any location for 48Hrs</h2>
             </article>
             <article class="post">
               <div class="progress-bar">
                 <div class="progress-bar__fill"></div>
               </div>
               <header class="post__header">
-                <span class="post__tag">News</span>
-                <p class="post__published">08 August 2019</p>
+                <span class="post__tag">Promotions</span>
+                <p class="post__published">25th December 2021</p>
               </header>
-              <h2 class="post__title">Hamilton wants harder championship fight from Leclerc and Verstappen
+              <h2 class="post__title">70% off to selected locations for 24Hrs
               </h2>
             </article>
           </div>
@@ -176,15 +177,17 @@
           <!-- Car - Reservation - Section -->
   <div class="car-reservation">
     <div class="reservation text-center">
-        <h3>ENJOY YOUR JOURNEY</h3>
-        <h3>WITH OUR <span style="color: rgb(255, 102, 0);">COMFORTABLE CARS.</span> </h3>
-        <p>Serving people from the last 10 years with a great sucess</p>
-        <p class="watermark"> RENT A CAR</p>
-
-        <img src="./assets/site-title-carousel/carpng.png" alt="">
+        <h3 data-aos="fade-left" data-aos-delay="200">ENJOY YOUR JOURNEY</h3>
+        <h3 data-aos="fade-left" data-aos-delay="200">WITH OUR <span style="color: rgb(255, 102, 0);">COMFORTABLE CARS.</span> </h3>
+        <p data-aos="fade-right" data-aos-delay="200">Serving people from the last 10 years with a great sucess</p>
+        <p class="watermark" data-aos="fade-right" data-aos-delay="200"> RENT A CAR</p>
+        <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+             <img src="./assets/site-title-carousel/carpng.png" alt="">
+        </div>
+       
     </div>
 
-    <div class="reservation-banner rsrvd-container ">
+    <div class="reservation-banner rsrvd-container " data-aos="slide-up" data-aos-delay="200">
         <div class="d-flex">
             <div class="icon">
                 <img src="./assets/site-title-carousel/car20_112837.svg" class="me-2" alt="">
@@ -196,30 +199,44 @@
         <form action="" method="get">
             <div class="input-fields d-flex-inpt py-3">
                 <select class="form-control form-control-sm inner-bg" name="car-list" id="" aria-placeholder="select your car">
-                    <option value="Select Your Car" selected>Select Your Car</option>
+                    <option value="Select Your Car" selected>Car Brands</option>
                     <option value="car1">
-                        Car 1
+                        Mercedes Benz AMG
                     </option>
                     <option value="car1">
-                        Car 1
+                        Fiat 2020 Model
                     </option>
                     <option value="car1">
-                        Car 1
+                        Jeep 2021 Model
                     </option>
                     <option value="car1">
-                        Car 1
+                        Toyota
                     </option>
                     <option value="car1">
-                        Car 1
+                        Nissan
                     </option>
                 </select>
-    
-                <input class="ms-3 form-control form-control-sm inner-bg" type="text" placeholder="Pick up location" required>
-                <input class="ms-3 form-control form-control-sm inner-bg" type="text" placeholder="Select a date" required>
-                <input class="ms-3 form-control form-control-sm inner-bg" type="text" placeholder="Hours of journey" required>
-                <button type="submit" id="button-color"  class="ms-3 form-control form-control-sm">BOOK NOW</button>
-                <!-- <input type="button"   value="BOOK A CAR NOW" name="BOOK A CAR NOW"> -->
-                
+     <select class="form-control form-control-sm inner-bg" name="car-list" id="" aria-placeholder="Pick a location" >
+                    <option value="Select Your Car" selected>Locations in Accra</option>
+                    <option value="car1">
+                        Amasaman
+                    </option>
+                    <option value="car1">
+                        Airport Residential Area
+                    </option>
+                    <option value="car1">
+                        Spintex
+                    </option>
+                    <option value="car1">
+                        Tema
+                    </option>
+                    <option value="car1">
+                        Teshi
+                    </option>
+                </select>
+                <input class=" form-control form-control-sm inner-bg" type="date" aria-placeholder="Select a date" required>
+                <input class=" form-control form-control-sm inner-bg" type="time" aria-placeholder="Hours of journey" required>
+                <button type="submit" id="button-color"  class=" form-control form-control-sm">BOOK NOW</button>
             </div>
         </form>
        
@@ -236,15 +253,15 @@
                     <h1 id="fleet-lb">Our Fleet</h1>
                     <div class="owl-carousel owl-theme blog-post">
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/car-lists/benz.jpg" alt="post-1">
+                            <img src="./assets/car-lists/benz.jpg" alt="post-1" height="290rem">
                             <div class="blog-title">
-                                <h3>London Fashion week's continued the evolution</h3>
-                                <button class="btn btn-blog">Fashion</button>
-                                <span>2 minutes</span>
+                                <h3>Mercedes Benz AMG</h3>
+                                <button class="btn btn-blog">GHS 5500</button>
+                                <span>24hrs</span>
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
-                            <img src="./assets/car-lists/custom-img1.jpg" alt="post-1">
+                            <img src="./assets/car-lists/custom-img1.jpg" alt="post-1" height="290rem">
                             <div class="blog-title">
                                 <h3>London Fashion week's continued the evolution</h3>
                                 <button class="btn btn-blog">Fashion</button>
@@ -252,7 +269,7 @@
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
-                            <img src="./assets/car-lists/custom-img2.jpg" alt="post-1">
+                            <img src="./assets/car-lists/custom-img2.jpg" alt="post-1" height="290rem">
                             <div class="blog-title">
                                 <h3>London Fashion week's continued the evolution</h3>
                                 <button class="btn btn-blog">Fashion</button>
@@ -260,7 +277,7 @@
                             </div>
                         </div>
                         <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/car-lists/jeep.jpg" alt="post-1">
+                            <img src="./assets/car-lists/jeep.jpg" alt="post-1" height="290rem">
                             <div class="blog-title">
                                 <h3>London Fashion week's continued the evolution</h3>
                                 <button class="btn btn-blog">Fashion</button>
@@ -268,7 +285,7 @@
                             </div>
                         </div>
                          <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/car-lists/custom-img3.jpg" alt="post-1">
+                            <img src="./assets/car-lists/custom-img3.jpg" alt="post-1" height="290rem">
                             <div class="blog-title">
                                 <h3>London Fashion week's continued the evolution</h3>
                                 <button class="btn btn-blog">Fashion</button>
@@ -276,7 +293,7 @@
                             </div>
                         </div>
                          <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/car-lists/custom-img4.jpg" alt="post-1">
+                            <img src="./assets/car-lists/custom-img4.jpg" alt="post-1" height="290rem">
                             <div class="blog-title">
                                 <h3>London Fashion week's continued the evolution</h3>
                                 <button class="btn btn-blog">Fashion</button>
@@ -299,226 +316,204 @@
         <section class="container">
             <div class="site-content">
                 <div class="posts">
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/Blog-post/blog1.png" class="img" alt="blog1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14, 2019</span>
-                                <span>2 Commets</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">Why should boys have all the fun? it's the women who are making india an
-                                alcohol-loving contry</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
+            <section class="what-we-do">
+                        <blockquote>
+                            <i class="fa fa-quote-left"></i>
+                            We are truly grateful to you for choosing us as your Best partner went it comes to car rentals and 
+                            giving us the opportunity to grow.
+                            Your fulfillment is our ultimate priority.
+                            <br><caption>
+                                ~Joshua Nyarko Boateng- Team Lead.
+                            </caption>
+                        </blockquote><br><hr><br>
+                <div class="intro">
+                    <div class="cust-fedback">
+                        <h3>Customer Feedback</h3>
+                        <p class="message">
+                        <i class="fa fa-quote-left"></i>
+                        By far the best team i've ever worked with. They truly understood the requirements i was going for and they nailed it!
+                        </p>
+                    </div><br><hr><br>
+                <div class="why-us">
+                <h3>WHY NOT CHOOSE US?</h3>
+                <p class="text-intro">
+                    Rent Smart provides wholistic services and solutions to individuals and businesses in 
+                    the area of vehicle leasing/rental, recruitment and training for support staff, 
+                    driver outsourcing, fleet management and transport services. We develop skills, resources, 
+                    knowledge and invent
+                    applications necessary to consistently deliver value-added service to our clients.
+                </p><br><hr><br>
+                <ul class="values">
+                    <h3>Our Core values</h3>
+                    <li>We value trust and honesty</li>
+                    <li>We are committed to excellence</li>
+                    <li>We are committed to employing the best Health, Safety and</li>
+                    <li>Environment techniques and approach worldwide.</li>
+                    <li>We are committed to promoting capacity development and learning to support all aspects of our business operations</li>
+                </ul>
+                </div>
+                <br><hr><br>
+                </div>
+            </section>
+            <!-- -----------------Car -Brands-------------- -->
+             <section class="car-brands">
+              <div class="brand-head">
+                  Our Fleet Brands
+              </div>
+              <div class="brand-logos" data-aos="flip-up" data-aos-delay="400">
+                  <img src="./assets/car-lists/logos/Untitledcar brands.svg" alt="">
+              </div>
+            </section>
+            <!-- --------x---------Car -Brands-------x------- -->
+            <!-- -----------------------------Testimonial------------------ -->
+            <section class="testimonial" id="test">
+                <div class="brand-head-tsm">Testimonials</div>
+                <div class="testimonial-flex">
+                    <div class="cards" data-aos="fade-left" data-aos-delay="400">
+                         <img src="./assets/car-lists/logos/card-1.jpg" alt="">
+                    <div class="mg-btm">
+                         <h3>Celestine Amoako</h3>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </div>
-                    <hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/Blog-post/blog2.png" class="img" alt="blog1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 16, 2019</span>
-                                <span>7 Commets</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">Why should boys have all the fun? it's the women who are making india an
-                                alcohol-loving contry</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
+                    <p>
+                        Obiviously it's natural to be skeptic about anything renting cars
+                        from peolple you don't really have family or a friendship relationship with.
+                        But "Rent Smart" makes you feel like family when it comes to their services.
+                        They have cool and affordable rates. 
+                    </p>
                     </div>
-                    <hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/Blog-post/blog3.png" class="img" alt="blog1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 19, 2019</span>
-                                <span>5 Commets</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">New data recording system to better analyse road accidents</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
                     </div>
-                    <hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/Blog-post/blog4.png" class="img" alt="blog1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
-                                <span>12 Commets</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">New data recording system to better analyse road accidents</a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                illum similique veniam tempore unde?
-                            </p>
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                        </div>
+                    <div class="cards" data-aos="fade-up" data-aos-delay="400">
+                        <img src="./assets/car-lists/logos/card-2.jpg" alt="">
+                    <div class="mg-btm">
+                         <h3>Nana Kwame Nyarko</h3>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
                     </div>
-                    <div class="pagination flex-row">
-                        <a href="#"><i class="fas fa-chevron-left"></i></a>
-                        <a href="#" class="pages">1</a>
-                        <a href="#" class="pages">2</a>
-                        <a href="#" class="pages">3</a>
-                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    <p>
+                        Obiviously it's natural to be skeptic about anything renting cars
+                        from peolple you don't really have family or a friendship relationship with.
+                        But "Rent Smart" makes you feel like family when it comes to their services.
+                        They have cool and affordable rates. 
+                    </p>
+                    </div>
+                    </div>
+                    <div class="cards" data-aos="fade-right" data-aos-delay="400">
+                        <img src="./assets/car-lists/logos/card-3.jpg" alt="">
+                    <div class="mg-btm">
+                         <h3>Joana Boateng</h3>
+                    <div class="ratings">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p>
+                        Obiviously it's natural to be skeptic about anything renting cars
+                        from peolple you don't really have family or a friendship relationship with.
+                        But "Rent Smart" makes you feel like family when it comes to their services.
+                        They have cool and affordable rates. 
+                    </p>
+                    </div>
                     </div>
                 </div>
+            </section>
+                </div>
+               <!-- ---------------x--------------Testimonial--------x---------- -->
+                <!-- --------------------Side - Bar----------------------- -->
                 <aside class="sidebar">
                     <div class="category">
-                        <h2>Category</h2>
-                        <ul class="category-list">
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
-                                <a href="#">Software</a>
-                                <span>(05)</span>
-                            </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
-                                <a href="#">Techonlogy</a>
-                                <span>(02)</span>
-                            </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
-                                <a href="#">Lifestyle</a>
-                                <span>(07)</span>
-                            </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
-                                <a href="#">Shopping</a>
-                                <span>(01)</span>
-                            </li>
-                            <li class="list-items" data-aos="fade-left" data-aos-delay="500">
-                                <a href="#">Food</a>
-                                <span>(08)</span>
-                            </li>
-                        </ul>
                     </div>
                     <div class="popular-post">
                         <h1>Our Crew</h1>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="200">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/staff/my_pic.jpg" class="img" alt="blog1">
+                                    <img src="./assets/staff/staff-josh.PNG" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
                                     <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Team Lead</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Fronted Developer | Data Analyst | Java</a>
+                                <a href="#">Joshua Nyarko Boateng</a>
+                                <a href="mail-to">joshua.boat19@gmail.com</a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="300">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-2.jpg" class="img" alt="blog1">
+                                    <img src="./assets/staff/staff-manuel.PNG" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp; Senior Developer</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
+                                <a href="#">UI/UX | Java | Fronted Developer</a>
+                                <a href="#">Emmanuel Larbi</a>
+                                <a href="mail-to">ekwabena57@gmail.com</a>
+                            </div>  
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="400">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-3.jpg" class="img" alt="blog1">
+                                    <img src="./assets/staff/staff-frank.PNG" class="img" alt="blog1" height="50%">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;UI/UX Designer
+                                    </span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Graphic Designing | Photoshop | UI/UX</a>
+                                <a href="#">Frank Baides Ayi Jnr</a>
+                                <a href="mail-to">francbaides@gmail.com</a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="500">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-4.jpg" class="img" alt="blog1">
+                                    <img src="./assets/staff/esther.jpg" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Content Writer</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Html/Css | Content writing </a>
+                                <a href="#">Esther Addo </a>
+                                <a href="mail-to">eaddo7382@gmail.com </a>
                             </div>
                         </div>
                         <div class="post-content" data-aos="flip-up" data-aos-delay="600">
                             <div class="post-image">
                                 <div>
-                                    <img src="./assets/popular-post/m-blog-5.jpg" class="img" alt="blog1">
+                                    <img src="./assets/staff/staff-edmond.PNG" class="img" alt="blog1">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
+                                    <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Network/Website Administrator</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
+                                <a href="#">Networking | Web Hosting</a>
+                                <a href="#">Edmond Ofori Darteh</a>
+                                <a href="mail-to"></a>
                             </div>
                         </div>
                     </div>
-                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
-                        <h2>Newsletter</h2>
-                        <div class="form-element">
-                            <input type="text" class="input-element" placeholder="Email">
-                            <button class="btn form-btn">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="popular-tags">
-                        <h2>Popular Tags</h2>
-                        <div class="tags flex-row">
-                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="300">travel</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="400">illustration</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="500">design</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="600">lifestyle</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="700">love</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="800">project</span>
-                        </div>
-                    </div>
                 </aside>
+                <!-- --------x------------Side - Bar-------------x---------- -->
             </div>
         </section>
 
@@ -545,7 +540,9 @@
                     <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
                 </div>
             </div>
-            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+<<<<<<< HEAD
+=======
+            <!-- <div class="instagram" data-aos="fade-left" data-aos-delay="200">
                 <h2>Instagram</h2>
                 <div class="flex-row">
                     <img src="./assets/instagram/thumb-card3.png" alt="insta1">
@@ -557,7 +554,8 @@
                     <img src="./assets/instagram/thumb-card7.png" alt="insta5">
                     <img src="./assets/instagram/thumb-card8.png" alt="insta6">
                 </div>
-            </div>
+            </div> -->
+>>>>>>> 426c6980870b34e1473eac04cff06b57d9b8ef18
             <div class="follow" data-aos="fade-left" data-aos-delay="200">
                 <h2>Follow us</h2>
                 <p>Let us be Social</p>
@@ -571,10 +569,9 @@
         </div>
         <div class="rights flex-row">
             <h4 class="text-gray">
-                Copyright ©2019 All rights reserved | made by
-                <a href="www.youtube.com/c/dailytuition" target="_black">Daily Tuition <i class="fab fa-youtube"></i>
-                    Channel</a>
-            </h4>
+            Copyright ©2021 All rights reserved | made by
+            <a href="#" target="_black">Group 5 ~ Accra Technical University<i class="fab fa-users"></i></a>
+        </h4>
         </div>
         <div class="move-up">
             <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>

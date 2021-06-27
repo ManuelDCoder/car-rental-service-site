@@ -3,10 +3,10 @@
     background-color: black;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
-    border: black solid 2px;
-    padding: 1rem;
-    height: 2.8rem;
+    justify-content: space-between !important;
+    padding: 1%;
+    font-size: 15px;
+    height: 3vh;
     font-family: var(--Lexend);
 }
 .contact-bar a, .contact-bar li{
@@ -17,8 +17,11 @@
     color: orangered;
     font-size: 1.5rem;
 }
+.contact-bar li:hover{
+   color: rgb(241, 46, 154);
+}
 .login a:hover{
-    color: rgb(240, 56, 126);
+    color: rgb(241, 46, 154);
 }
  .nav-search{
   padding: 1rem;
@@ -28,7 +31,7 @@
 .nav-search{
     position: relative;
     top: -1.5rem;
-    right: 2rem;
+    right: 1%;
     width: 18rem;
     border-radius: .5rem;
   }
@@ -328,6 +331,7 @@
       grid-column: 3/6;
     }
   }
+  /* End of site title carousel section */
 
   /* Car Reservation  */
   .reservation {
@@ -349,7 +353,7 @@
   
   .reservation .watermark {
     position: relative;
-    opacity: .08;
+    opacity: .08 !important;
     font-size: 6rem !important;
     font-weight: 700 !important;
     top: -125px;
@@ -363,7 +367,7 @@
   .reservation img {
     width: 65%;
     position: relative;
-    top: -600px;
+    top: -570px;
   }
   
   .rsrvd-container {
@@ -376,7 +380,7 @@
     padding: 1rem;
     overflow: hidden;
     top: 88px;
-    left: 300px;
+    left: 190px;
     background-color: white;
   }
   
@@ -391,7 +395,7 @@
   }
   .rsrvd-container .d-flex-inpt{
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-evenly !important;
   }
   
   #rb-margin {
@@ -412,7 +416,7 @@
   .form-control{
     border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 3px;
     margin-right: 5px;
   }
   .form-control::placeholder{
@@ -422,3 +426,278 @@
   .inner-bg {
     background-color: #f2f2f2;
   }
+  /* Contact-Us Page */
+    .hero {
+        background-image: url('../assets/bg.png');
+        background-position: center;
+        background-size: 100%;
+        height: 55vh;
+      }
+      .hero .hero-text{
+        color: white;
+        font-size: 5rem;
+        text-align: center;
+        padding-top: 5rem;
+        font-family: var(--Lexend);
+      }
+
+      .contact-section {
+        position: relative;
+        top: 10%;
+      }
+      
+        input, textarea {
+    padding: 10px 20px;
+    border: 1px solid #e5e5e5;
+    width: 100%;
+        }
+        .input-field:focus{
+          outline: 2px solid rgb(245, 91, 35) ;
+        }
+
+    .input {
+        display: flex;
+    }
+
+    #input {
+        margin-right: 27%;
+        width: 30%;
+}
+    #input1 {
+        width: 30%;
+
+    }
+
+    textarea {
+    min-height: 150px;
+    resize: none;
+}
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-title{
+
+        color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+    }
+
+    .page-list {
+        display: flex;
+    }
+    
+.contact-item {
+    padding: 50px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+    .contact-item {
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.contact-item .icon {
+    width: 70px;
+    height: 70px;
+    color: orangered;
+    background-color: transparent;
+    display: inline-block;
+    border: 3px dashed orangered;
+    text-align: center;
+    line-height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+}
+
+.contact-item .title {
+    text-transform: capitalize;
+    margin-top: 25px;
+}
+
+.contact-item p {
+    margin-top: 15px;
+}
+
+.contact-form-area {
+    margin-top: 70px;
+}
+
+.contact-form-area .title {
+    text-transform: capitalize;
+}
+
+.contact-form-area .contact-form {
+    margin-top: 30px;
+}
+
+.contact-form-area .contact-form .frm-group {
+    margin-bottom: 30px;
+}
+
+.contact-form-area .contact-form .frm-group input[type="submit"] {
+    width: auto;
+    background-color: orangered;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 12px 35px;
+    border: none;
+    cursor: pointer;
+}
+/* --------End of contact-us Page -------------- */
+
+/* Car-Brands - Index Page*/
+.brand-logos{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.brand-logos img{
+  width: 51rem;
+}
+.car-brands-index .brand-logos .logo-size{
+  width: 20rem;
+
+}
+ .brand-head{
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--Lexend);
+  border: 3px dashed orangered;
+  margin: 1rem;
+  padding: 1.5rem;
+}
+
+/* what we do  */
+blockquote{
+  margin: 5rem 3rem 2rem 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--Abel);
+  color: rgb(65, 62, 62);
+}
+blockquote i{
+  font-size: 4rem;
+  color: orangered;
+}
+.what-we-do h3{
+  border-left: 8px solid orangered;
+  padding-left: 2rem;
+  font-size: 2rem;
+}
+.intro .message{
+  font-size: 1.5rem;
+  font-family: var(--Abel) !important;
+  font-weight: 400;
+  margin: 3rem 3rem 2rem 3rem;
+
+}
+.message i{
+  font-size: 3rem;
+  color: orangered;
+}
+.why-us{
+  margin-top: 4rem;
+}
+.why-us .text-intro{
+  font-size: 1.8rem;
+  font-family: var(--Lexend);
+  font-weight: 500;
+}
+.values h3{
+  margin-bottom: 2rem;
+  
+}
+.values li{
+  margin-bottom: 1rem;
+  list-style: circle;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: var(--Lexend) !important;
+}
+/* --------what we do--------  */
+/* Testimonial */
+.testimonial{
+  padding-top: 1rem;
+}
+.testimonial-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.testimonial .brand-head-tsm{
+   text-align: center;
+  font-size: 2rem;
+  font-family: var(--Lexend);
+  border: 3px dashed orangered;
+  margin: 1rem;
+  padding: 1.5rem;
+}
+.testimonial img{
+  position:  relative;
+  top: -7rem;
+  left: 0.1rem;
+   width: 13rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 5px solid rgb(255, 255, 255);
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.testimonial .cards .mg-btm i{
+  color: orangered;
+}
+.testimonial .testimonial-flex .cards{
+  text-align: center;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 15rem !important;
+  margin-top: 7rem;
+  height: 22rem;
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.testimonial .cards .mg-btm{
+  margin-top: -7rem;
+}
+/* Car - Brands - Page */
+.car-brands-page{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.car-brands-page .car-cards{
+  margin: 3rem 0rem 3rem 3rem ;
+  width: 40%;
+  padding: 2rem;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.cr-brnd-wdt{
+width: 70rem;
+margin: 2rem 2rem 0rem 15rem;
+}
+.wdt{
+  width: 70rem;
+margin: 2rem 2rem 0rem 15rem;
+}
+.car-h1{
+  width: 12rem;
+  color: black;
+  margin: 3rem;
+  border: 5px dashed orangered;
+  padding: 2rem;
+}
+.car-cards h2{
+  padding: 2rem;
+}
